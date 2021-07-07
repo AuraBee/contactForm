@@ -8,6 +8,6 @@ function closeBtn(){
 }
 
 function faq(){
-    container.innerHTML = "<p>Thanks, query submitted</p>"
+    container.innerHTML = "<h3>Thanks, query submitted</h3>"
     container.innerHTML += "<button onclick='closeBtn()'>Close Page</button>"
 }

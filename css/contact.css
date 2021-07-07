@@ -15,7 +15,7 @@ body {
     height: 100vh;
     justify-content:  center;
     align-items: center;
-    background-image: url(palm-trees.jpg);
+    background-image: url(../img/palm-trees.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: fixed;
