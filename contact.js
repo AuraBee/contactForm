@@ -4,10 +4,10 @@ const container = document.getElementById("container")
 // that says "Thank you for buying!"
 
 function closeBtn(){
-    container.innerHTML = "<h2>We will respond within 24hrs</h2>"
+    container.innerHTML = ""
 }
 
 function faq(){
-    container.innerHTML = "<h3>Thanks, query submitted</h3>"
+    container.innerHTML = "<h3>Thanks, query submitted, <h3>We will respond with 24hrs</h3>"
     container.innerHTML += "<button onclick='closeBtn()'>Close Page</button>"
 }

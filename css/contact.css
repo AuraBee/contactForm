@@ -5,49 +5,40 @@ html, body {
     margin: 0;
     padding: 0;
 }
-
+html {
+    font-size: 62.5%;
+}
 body {
     text-align: center;
     font-family:  sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.1rem;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     justify-content:  center;
     align-items: center;
     background-image: url(../img/palm-trees.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: fixed;
+    overflow: hidden;
 }
 
 
-img,
 input,
 button {
-    border-radius: 5px;    
-}
-
-
-#container {
-   
-    background: rgba(183,	215, 232, 0.8);
-    color:  #7db7d5;
-    width: 100%;
-    height: 50vh;
-    margin: 0 auto;
-    padding-top: 2em;
-    text-align: center;
-    overflow: hidden;
+    border-radius: 5px;  
     
 }
+
+
 
 h2  {
     font-size:180%;
     font-weight: bolder;
     margin: 0 auto;
     margin-bottom: 0;
-    color: #4f647e;
+    color: hsl(232, 93%, 54%);
     padding: 0 1.5em;
 }
 
@@ -58,39 +49,66 @@ img {
     margin: 0 auto;
 }
 
+
+
+#container {
+    background: rgba(183,	215, 232, 0.8);
+    
+    color: hsl(232, 93%, 54%);
+    
+    width: 100%;
+    margin: 0 auto;
+    padding:2rem 0 8rem;
+    text-align: center;
+    
+}
+
 form {
     display: grid;
     grid-template: 1em repeat(4, 1fr) 1em/ 1em 0.5em 1fr 2em;
     gap: 1em;
     min-height: 500px;
-    width:100%;
+    max-width:100%;
     margin: 0 auto;
+    margin-top: 2rem;
 }
 
 .input-form {
- 
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
-  padding: 2rem 15rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding: 3rem 10rem;
   text-align: left;
+  font-size: 110%;
       
 }
 
 input {
     grid-column: 3;
-    width: 100%;
+    min-width: 100%;
     margin: 0 auto;
-   margin-bottom: 1.5em; 
-   padding: 0 25rem; 
+    margin-bottom: 2.5em; 
+    margin-top: .75em;
+    padding: 20rem  25rem; 
+ 
 }
 
 label {
     text-align: left;
+    margin-left: 1rem;
+    
+    
 }
 
 .title {
     width: 100%;
+    font-size: 125%;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: .5em;
+   
 }
 
 #name {
@@ -113,14 +131,7 @@ button {
    color:black;
 }
 
-button {
-    background:	#e8b7d7;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: #4f647e;
-   
-    
-}
+
 
 input {
     color: black;
@@ -128,7 +139,7 @@ input {
 
 input::-webkit-input-placeholder {
 font-family: 'Material Icons Outlined';
-color: #87bdd8; 
+color: hsl(299, 88%, 59%);
  font-size: xx-large; 
 }
 
@@ -148,11 +159,19 @@ button {
     grid-row: 5;
     grid-column: 2/-2;
     font-family: inherit;
-    font-size: inherit;
+    font-size: 130%;
     max-width: 400px;
     margin:0 auto;
-    margin-top: 1em;
-    padding: .5em 3em;
+    margin-top: 4em;
+    padding: 1em 3em;
+    background: unset;
+    color:  hsl(299, 88%, 59%);
+        font-weight: bolder;
+       border: 2px solid hsl(214, 84%, 54%);
+      
+        text-transform: uppercase;
+        letter-spacing: .5em;
+   
    
 }
 
@@ -161,5 +180,26 @@ button:focus {
     outline: none;
    background:#B992AC;
    color: #f1e9ee;
-  
-}
+  }
+
+ 
+@media (min-width: 760px) {
+    #container{
+        padding-top: 5em;
+    }
+   }
+ 
+
+ 
+@media (min-width: 760px) {
+   #container{
+       padding-top: 15em;
+   }
+  }
+
+
+  @media (min-width: 1024px) {
+    #container{
+        padding-top: 25em;
+    }
+   }
